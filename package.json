@@ -4,6 +4,7 @@
   "sideEffects": false,
   "scripts": {
     "dev": "wrangler --compatibility-date 2023-03-02 pages dev ./public",
+    "build": "prisma generate --data-proxy",
     "start": "npm run wrangler"
   },
   "dependencies": {
