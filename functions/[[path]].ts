@@ -1,11 +1,5 @@
 import { PrismaClient } from '@prisma/client/edge'
 
-globalThis.process = {
-  env: {
-    NODE_ENV: `development`,
-  },
-}
-
 export const onRequest: PagesFunction = async (ctx) => {
   console.log(ctx.env)
 
