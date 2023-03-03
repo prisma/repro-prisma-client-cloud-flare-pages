@@ -3,7 +3,7 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "dev": "dotenv -c development -- wrangler --compatibility-date 2023-03-02 pages dev ./public",
+    "dev": "wrangler --compatibility-date 2023-03-02 pages dev ./public",
     "start": "npm run wrangler"
   },
   "dependencies": {
