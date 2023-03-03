@@ -6,7 +6,7 @@ export const onRequest: PagesFunction = async (ctx) => {
   new PrismaClient({
     datasources: {
       db: {
-        url: ctx.env.DATABASE_URL_PROXY,
+        url: ctx.env.DATABASE_URL_PROXY_2,
       },
     },
   })
