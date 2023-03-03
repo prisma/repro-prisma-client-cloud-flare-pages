@@ -3,18 +3,8 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "format": "prettier --write .",
-    "lint": "eslint . --ext .ts,.tsx --fix",
-    "build": "remix build",
-    "dev:remix": "remix watch",
-    "dev:wrangler": "wrangler --compatibility-date 2023-03-02 pages dev ./public",
-    "dev": "npm-run-all build --print-label --parallel \"dev:*\"",
-    "start": "npm run wrangler",
-    "check:format": "prettier --check .",
-    "check:lint": "eslint . --ext .ts,.tsx --max-warnings 0",
-    "check:types": "tsc --noEmit",
-    "prisma:development": "dotenv -c development -- prisma",
-    "prisma:production": "dotenv -c production -- prisma"
+    "dev": "dotenv -c development -- wrangler --compatibility-date 2023-03-02 pages dev ./public",
+    "start": "npm run wrangler"
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
