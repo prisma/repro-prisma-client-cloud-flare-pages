@@ -7,6 +7,10 @@ export const loader = createLoader(async ({ context }) => {
     throw new Error(`DATABASE_URL_PROXY is not set`)
   }
 
+  console.log(`---------------------`)
+  console.log(context)
+  console.log(`---------------------`)
+
   const prisma = getPrisma({
     url: context.DATABASE_URL_PROXY,
   })
