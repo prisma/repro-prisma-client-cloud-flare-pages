@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  # postgresql://prisma:prisma@localhost:5555
+  postgres:
+    image: postgres:14
+    container_name: prisma-cloud-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: prisma
+      POSTGRES_PASSWORD: prisma
+    ports:
+      - 5555:5432
